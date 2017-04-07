@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import EmailView from './components/signup/email';
+import ScrollForm from './components/scroll_form';
 import './App.css';
 
 class App extends Component {
+  submit() {
+    console.log('app area now'); 
+  }
+
   render() {
     return (
       <div className="App">
@@ -12,7 +16,7 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <div>
-          <EmailView /> 
+          <ScrollForm onSubmit={this.submit} />
         </div>
       </div>
     );
