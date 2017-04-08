@@ -4,8 +4,14 @@ import ScrollForm from './components/scroll_form';
 import './App.css';
 
 class App extends Component {
-  submit() {
+  showResies = values => {
     console.log('app area now'); 
+    new Promise(resolve => {
+      setTimeout(() => {
+        console.log(`You submitted:\n\n${JSON.stringify(values, null, 2)}`)
+        resolve();
+      }, 500);
+    })
   }
 
   render() {
@@ -16,7 +22,7 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <div>
-          <ScrollForm onSubmit={this.submit} />
+          <ScrollForm onSubmit={this.showResies} />
         </div>
       </div>
     );

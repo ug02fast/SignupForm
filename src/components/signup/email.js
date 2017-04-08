@@ -31,13 +31,15 @@ let EmailView = props => {
         <Field name='confirmPassword' component={renderField} 
           type='password' label='Confirm Password' validate={[ required, matchPass ]}/>
       </div>
-      <button type='submit' className='next'>Next</button>
+      <div>
+        <button type='submit' className='next'>Next</button>
+      </div>
     </form>
   );
 }
 
 export default EmailView = reduxForm({
   form: 'email',
-  destoryOnUnmount: false,
-  forceUnregisterOnUnmount: true 
+  destroyOnUnmount: false,
+  forceUnregisterOnUnmount: false 
 })(EmailView);
