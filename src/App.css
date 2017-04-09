@@ -33,11 +33,9 @@
   justify-content: center;
   align-items: center;
   align-content: center; }
-
-.form-container .progBar {
-  width: 100%; }
-
-.form-container .progBar .progStatus {
-  width: 1%;
-  height: 30px;
-  background-color: blue; }
+  .form-container .progBar {
+    width: 100%; }
+    .form-container .progBar .progStatus {
+      width: 1%;
+      height: 30px;
+      background-color: blue; }
