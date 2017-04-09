@@ -46,11 +46,11 @@ let PersonalDetails = props => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div>
+      <div className='DOB-container'>
         <label>DOB</label>
-        <Field name='dd' component={renderField} type='text' validate={[ required, ddLimits, number ]} />
-        <Field name='mm' component={renderField} type='text' validate={[ required, mmLimits, number, febCase ]} />
-        <Field name='yyyy' component={renderField} type='text' validate={[ required, number, confirm18 ]} />
+        <Field name='dd' component={renderField} type='text' validate={[ required, ddLimits, number ]} placeholder='DD' />
+        <Field name='mm' component={renderField} type='text' validate={[ required, mmLimits, number, febCase ]} placeholder='MM' />
+        <Field name='yyyy' component={renderField} type='text' validate={[ required, number, confirm18 ]} placeholder='YYYY' />
       </div>
       <div>
         <label>Gender</label>

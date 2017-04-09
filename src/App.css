@@ -26,9 +26,18 @@
 
 
 */
-.container {
-  display: flex; }
+.form-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
 
-body {
-  font: 100% Helvetica, sans-serif;
-  color: #333; }
+.form-container .progBar {
+  width: 100%; }
+
+.form-container .progBar .progStatus {
+  width: 1%;
+  height: 30px;
+  background-color: blue; }

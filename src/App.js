@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import ScrollForm from './components/scroll_form';
 import './App.css';
 
@@ -17,11 +17,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <div>
+        <div className='form-container'>
           <ScrollForm onSubmit={this.showResies} />
         </div>
       </div>

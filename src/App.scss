@@ -27,15 +27,25 @@
 
 */
 
-$font-stack: Helvetica, sans-serif;
-$primary-color: #333;
-
-
-.container {
+.form-container {
   display: flex;
-}
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  
+  .DOB-container {
+     
+  }
 
-body { 
-  font: 100% $font-stack;
-  color: $primary-color;
+  .progBar {
+    width: 100%;
+    
+    .progStatus {
+      width: 1%;
+      height: 30px;
+      background-color: blue;
+    }
+  }
 }

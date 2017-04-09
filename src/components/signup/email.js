@@ -1,6 +1,7 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 import renderField from './render_field';
+import ScrollHeader from './scroll_header';
 
 const required = value => value ? undefined : 'Required';
 const minLength = min => value =>
@@ -19,6 +20,7 @@ let EmailView = props => {
 
   return (
     <form onSubmit={handleSubmit}>
+      <ScrollHeader page={1} />
       <div>
         <Field name='email' component={renderField}
           type='email' label='Email' validate={[ email, required ]} warn={yahoo} />
